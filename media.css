@@ -86,10 +86,13 @@
     border-radius: 3px;
   }
 
-
   .comments button:hover {
-    color: #FF698C;
+    color: #ff698c;
     cursor: pointer;
+  }
+
+  footer {
+    display: none;
   }
 }
 

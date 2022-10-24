@@ -32,9 +32,8 @@ ion-icon {
   font-size: 22px;
 }
 
-/* TODO: style main later */
-main {
-  margin-top: 55px;
+.feed {
+  margin: 55px 0;
 }
 
 .stories {
@@ -141,7 +140,7 @@ video {
   font-weight: 300;
 }
 
-.likes strong {
+f .likes strong {
   font-weight: 500;
 }
 
@@ -203,4 +202,20 @@ input::placeholder {
 
 aside {
   display: none;
+}
+
+footer {
+  width: 100vw;
+  height: 54px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 19px;
+
+  background-color: #fff;
+  border-top: 1px solid #dbdbdb;
 }
