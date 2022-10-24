@@ -1,4 +1,58 @@
 @media (min-width: 614px) {
+  header {
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  nav:not(.desktop) {
+    display: none;
+  }
+
+  nav.desktop {
+    display: flex;
+  }
+
+  .logo {
+    display: flex;
+    gap: 10px;
+  }
+
+  .logo-separator {
+    width: 1px;
+    height: 22px;
+    background-color: #dbdbdb;
+  }
+
+  nav input {
+    width: 215px;
+    height: 28px;
+    text-align: center;
+
+    font-size: 12px;
+    line-height: 14px;
+    color: #979797;
+    font-weight: 600;
+
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+  }
+
+  nav input::placeholder {
+    font-weight: 400;
+  }
+
+  nav input:focus {
+    border: 2px solid #ff698c;
+    color: #ff698c;
+  }
+  .actions {
+    display: flex;
+    gap: 20px;
+  }
 }
 @media (min-width: 935px) {
+  nav {
+    width: 935px;
+    margin: 0 auto;
+  }
 }
