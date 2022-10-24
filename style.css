@@ -7,7 +7,6 @@ body {
 
 header {
   width: 100vw;
-  padding: 0 22px;
 
   background-color: #fff;
   position: fixed;
@@ -17,6 +16,7 @@ header {
 
 nav {
   height: 54px;
+  padding: 0 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,6 +30,54 @@ ion-icon {
   font-size: 22px;
 }
 
+/* TODO: style main later */
 main {
-  margin-top: 54px;
+  margin-top: 55px;
+}
+
+.stories {
+  height: 121px;
+  padding: 0 18px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.stories article {
+  width: 66px;
+
+  text-align: center;
+}
+
+.container {
+  width: 66px;
+  height: 66px;
+  background: url("assets/images/stories_background.png");
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stories p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #262626;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 6px;
+}
+
+.stories ion-icon {
+  display: none;
+}
+
+aside {
+  display: none;
 }

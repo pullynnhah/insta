@@ -1,4 +1,4 @@
-@media (min-width: 614px) {
+@media (min-width: 615px) {
   header {
     border-bottom: 1px solid #dbdbdb;
   }
@@ -9,11 +9,22 @@
 
   nav.desktop {
     display: flex;
+    justify-content: space-between;
   }
 
   .logo {
     display: flex;
     gap: 10px;
+  }
+
+  ion-icon {
+    transition: all 400ms;
+  }
+
+  ion-icon:hover {
+    color: #ff698c;
+    cursor: pointer;
+    scale: 1.2;
   }
 
   .logo-separator {
@@ -45,14 +56,61 @@
     border: 2px solid #ff698c;
     color: #ff698c;
   }
+
   .actions {
     display: flex;
     gap: 20px;
   }
+
+  main {
+    max-width: 614px;
+    margin: 88px auto;
+  }
+
+  .stories {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 24px;
+
+    position: relative;
+  }
+
+  .stories ion-icon {
+    display: initial;
+    font-size: 32px;
+    color: #fff;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    position: absolute;
+    right: 8px;
+    top: 43px;
+  }
 }
-@media (min-width: 935px) {
+
+@media (min-width: 936px) {
   nav {
-    width: 935px;
+    width: 936px;
     margin: 0 auto;
+    padding: 0;
+  }
+
+  .feed {
+    width: 936px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* TODO: ajust aside */
+  aside {
+    display: flex;
+    background-color: coral;
+    width: 293px;
+    height: 500px;
   }
 }
