@@ -17,8 +17,9 @@
     gap: 10px;
   }
 
-  ion-icon {
-    transition: all 400ms;
+  ion-icon,
+  button {
+    transition: all 300ms;
   }
 
   ion-icon:hover {
@@ -36,20 +37,14 @@
   nav input {
     width: 215px;
     height: 28px;
-    text-align: center;
 
     font-size: 12px;
     line-height: 14px;
-    color: #979797;
-    font-weight: 600;
+    text-align: center;
 
     background-color: #fafafa;
     border: 1px solid #dbdbdb;
     border-radius: 3px;
-  }
-
-  nav input::placeholder {
-    font-weight: 400;
   }
 
   nav input:focus {
@@ -85,6 +80,17 @@
     right: 8px;
     top: 43px;
   }
+
+  .posts article {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+  }
+
+
+  .comments button:hover {
+    color: #FF698C;
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 936px) {
@@ -109,7 +115,7 @@
   /* TODO: ajust aside */
   aside {
     display: flex;
-    background-color: coral;
+    background-color: lightpink;
     width: 293px;
     height: 500px;
   }
