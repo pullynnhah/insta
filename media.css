@@ -86,9 +86,16 @@
     border-radius: 3px;
   }
 
-  .comments button:hover {
-    color: #ff698c;
+  button:hover {
     cursor: pointer;
+  }
+  .comments button:hover,
+  aside button:hover {
+    color: #ff698c;
+  }
+
+  .user-comment button:hover {
+    color: #0095f6;
   }
 
   footer {
@@ -115,11 +122,71 @@
     margin-right: 0;
   }
 
-  /* TODO: ajust aside */
   aside {
-    display: flex;
-    background-color: lightpink;
     width: 293px;
-    height: 500px;
+    height: fit-content;
+    display: initial;
+
+    position: sticky;
+    top: 88px;
+    right: 0;
+
+    color: #262626;
+  }
+
+  aside strong {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .user {
+    height: 104px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+  }
+
+  .user p {
+    color: #8e8e8e;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .suggestions > div {
+    display: flex;
+    gap: 11px;
+    margin-bottom: 16px;
+  }
+
+  .suggestion-header {
+    font-weight: 500;
+  }
+
+  .suggestions {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .suggestions p {
+    color: #8e8e8e;
+  }
+
+  .suggestion button {
+    margin-left: auto;
+    font-weight: 500;
+    color: #139ef2;
+  }
+
+  .links, .copyright {
+    font-size: 11px;
+    line-height: 13px;
+    color: #c7c7c7;
+    margin: 18px 0;
+  }
+
+  a:hover {
+    font-weight: 500;
+    color: #ff698c;
   }
 }

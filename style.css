@@ -140,7 +140,7 @@ video {
   font-weight: 300;
 }
 
-f .likes strong {
+.likes strong {
   font-weight: 500;
 }
 
@@ -194,10 +194,6 @@ input::placeholder {
 
 .user-comment button {
   color: #b2dffc;
-}
-
-.user-comment button:hover {
-  color: #0095f6;
 }
 
 aside {
