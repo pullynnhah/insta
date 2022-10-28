@@ -56,7 +56,7 @@ ion-icon {
 .container {
   width: 66px;
   height: 66px;
-  background: url("assets/images/stories_background.png");
+  background: url("../images/stories_background.png");
 
   display: flex;
   justify-content: center;
